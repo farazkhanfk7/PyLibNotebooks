@@ -13,3 +13,9 @@ y = df.Pass_Or_Fail
 x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=42)
 
 logistic_regression = LogisticRegression()
+logistic_regression.fit(x_train,y_train)
+
+y_pred = logistic_regression.predict(x_test)
+
+accuracy = metrics.accuracy_score(y_test, y_pred)
+accuracy_percentage = 100 * accuracy
