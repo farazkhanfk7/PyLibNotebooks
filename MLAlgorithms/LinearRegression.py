@@ -44,7 +44,7 @@ plt.scatter(X_test, y_test, color ='b')
 plt.plot(X_test, y_pred, color ='k') 
 
 plt.show() 
-# Data scatter of predicted values 
+ 
 
 
 
